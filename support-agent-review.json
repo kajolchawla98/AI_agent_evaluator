@@ -1,0 +1,28 @@
+{
+  "spec_completeness_diagnostic": 85,
+  "checks": {
+    "problem": true,
+    "inputs_outputs": true,
+    "acceptance": true,
+    "negative_criteria": false,
+    "evals": true,
+    "agent_boundaries": true
+  },
+  "ambiguous_terms": [
+    "accurate",
+    "automatically"
+  ],
+  "findings": [
+    {
+      "finding": "Ambiguous language detected",
+      "evidence": "accurate, automatically",
+      "recommendation": "Replace vague terms with observable behavior, examples, thresholds, or pass/fail conditions."
+    },
+    {
+      "finding": "Negative acceptance criteria are missing",
+      "evidence": "No explicit must-not/should-not behavior detected.",
+      "recommendation": "Specify important failure modes and prohibited outputs/actions."
+    }
+  ],
+  "note": "This is a deterministic checklist, not a model-quality or production-readiness score."
+}

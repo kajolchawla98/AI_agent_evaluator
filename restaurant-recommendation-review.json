@@ -1,0 +1,39 @@
+{
+  "spec_completeness_diagnostic": 55,
+  "checks": {
+    "problem": true,
+    "inputs_outputs": true,
+    "acceptance": true,
+    "negative_criteria": false,
+    "evals": false,
+    "agent_boundaries": false
+  },
+  "ambiguous_terms": [
+    "fast",
+    "personalized",
+    "relevant"
+  ],
+  "findings": [
+    {
+      "finding": "Ambiguous language detected",
+      "evidence": "fast, personalized, relevant",
+      "recommendation": "Replace vague terms with observable behavior, examples, thresholds, or pass/fail conditions."
+    },
+    {
+      "finding": "Negative acceptance criteria are missing",
+      "evidence": "No explicit must-not/should-not behavior detected.",
+      "recommendation": "Specify important failure modes and prohibited outputs/actions."
+    },
+    {
+      "finding": "AI evaluation plan is missing or unclear",
+      "evidence": "No eval/evaluation/test-plan language detected.",
+      "recommendation": "Add representative, edge, adversarial, and failure-mode test cases."
+    },
+    {
+      "finding": "Agent autonomy / human escalation is unclear",
+      "evidence": "No clear tool, autonomy, approval, or escalation behavior detected.",
+      "recommendation": "Define allowed actions and when the agent must ask for human confirmation."
+    }
+  ],
+  "note": "This is a deterministic checklist, not a model-quality or production-readiness score."
+}

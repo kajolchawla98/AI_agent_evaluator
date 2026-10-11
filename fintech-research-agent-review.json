@@ -1,0 +1,14 @@
+{
+  "spec_completeness_diagnostic": 100,
+  "checks": {
+    "problem": true,
+    "inputs_outputs": true,
+    "acceptance": true,
+    "negative_criteria": true,
+    "evals": true,
+    "agent_boundaries": true
+  },
+  "ambiguous_terms": [],
+  "findings": [],
+  "note": "This is a deterministic checklist, not a model-quality or production-readiness score."
+}
